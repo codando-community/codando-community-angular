@@ -1,0 +1,211 @@
+@import "../../../sass/abstracts/variables";
+
+nav{
+    padding-top: 50px;
+}
+
+.splide__slide{
+  border: 3px solid white;
+  border-radius: 40px;
+  background: #fff;
+  padding-right: 10px;
+  margin-bottom: 100px;
+  
+}
+
+.splide__slide img {
+  border-radius: 20%;
+  margin-bottom: 15px;
+  width: 70% ;
+  height: 250px;
+  margin-left: 15%;
+  
+}
+.informacoes{
+  margin-bottom: 10%;
+}
+
+p{
+float: right;
+color: black;
+padding-right: 20px;
+padding-top: 10px;
+font-size: small;
+font-weight: 200;
+}
+
+span{
+  float: left;
+  color: black;
+  padding-left: 20px;
+  font-family: "Montserrat" , sans-serif;
+  font-weight: 500;
+}
+nav{
+  background: $color_darkBlue;
+}
+
+.arrows{
+   width: 28px;
+   height: 28px;
+   color: $color_navyBlue;
+   position: absolute;
+   top: -100%;
+   margin-top: -31px;
+}
+.prev{
+   left: 40px;
+   left: -3px;
+}
+   
+.next{
+   right: 40px;
+   right: -3px;
+}
+// Mobile 
+@media(max-width: 650px){
+  .splide__slide img {
+    width: 90% ;
+    height: 160px;
+    padding-left: 10px;
+    margin-left: 0%;
+
+  }
+ 
+  .prev{
+    left: -3px;
+  }
+   
+  .next{
+    right: -3px;
+    fill:  $color_navyBlue;
+  }
+
+  .arrows{
+    width: 25px;
+    height: 25px;
+    color: $color_navyBlue;
+    position: absolute;
+    top: -100%;
+    margin-top: -31px;
+  }
+
+}
+
+// Mobile 2
+@media(min-width: 651px) and (max-width: 768px){
+  .splide__slide img {
+    width: 90% ;
+    height: 160px;
+    padding-left: 10px;
+    margin-left: 0%;
+  }
+
+  .prev{
+    left: -3px;
+  }
+   
+  .next{
+    right: -3px;
+    fill:  $color_navyBlue;
+  }
+
+  .arrows{
+    width: 25px;
+    height: 25px;
+    color: $color_navyBlue;
+    position: absolute;
+    top: -100%;
+    margin-top: -31px;
+  }
+
+}
+
+// Tablet
+@media(min-width: 769px) and (max-width: 950px){
+
+  .splide__slide img {
+    width: 100% ;
+    height: 190px;
+    padding-left: 3px;
+    margin-left: 0%;
+  }
+
+  .prev{
+    left: -3px;
+  }
+   
+  .next{
+    right: -3px;
+    fill:  $color_navyBlue;
+  }
+
+  .arrows{
+    width: 25px;
+    height: 25px;
+    color: $color_navyBlue;
+    position: absolute;
+    top: -100%;
+    margin-top: -31px;
+  }
+
+
+}
+// Tablet 2
+@media(min-width: 951px) and (max-width: 1048px){
+
+  .splide__slide img {
+    width: 100% ;
+    height: 250px;
+    padding-left: 3px;
+    margin-left: 0%;
+  }
+
+  .prev{
+    left: -3px;
+  }
+   
+  .next{
+    right: -3px;
+  }
+
+  .arrows{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -100%;
+    margin-top: -31px;
+  }
+
+
+}
+// Tablet 3
+@media(min-width: 1049px) and (max-width: 1279px){
+
+  .splide__slide img {
+    width: 100% ;
+    height: 250px;
+    padding-left: 3px;
+    margin-left: 0%;
+  }
+
+  .arrows{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -100%;
+    margin-top: -31px;
+  }
+
+  .prev{
+    left: -3px;
+  }
+   
+  .next{
+    right: -3px;
+  }
+
+  
+
+
+}
