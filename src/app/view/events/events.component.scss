@@ -1,87 +1,103 @@
 @import "../../../sass/abstracts/variables";
 
-nav{
-    padding-top: 50px;
+nav {
+  padding-top: 50px;
 }
 
-.splide__slide{
+.splide__slide {
   border: 3px solid white;
   border-radius: 40px;
   background: #fff;
   padding-right: 10px;
   margin-bottom: 100px;
-  
 }
 
 .splide__slide img {
   border-radius: 20%;
   margin-bottom: 15px;
-  width: 70% ;
+  width: 70%;
   height: 250px;
   margin-left: 15%;
-  
 }
-.informacoes{
+
+.informacoes {
   margin-bottom: 10%;
 }
 
-p{
-float: right;
-color: black;
-padding-right: 20px;
-padding-top: 10px;
-font-size: small;
-font-weight: 200;
+p {
+  float: right;
+  color: black;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: small;
+  font-weight: 200;
 }
 
-span{
+span {
   float: left;
   color: black;
   padding-left: 20px;
-  font-family: "Montserrat" , sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
-nav{
+
+nav {
   background: $color_darkBlue;
 }
 
-.arrows{
-   width: 28px;
-   height: 28px;
-   color: $color_navyBlue;
-   position: absolute;
-   top: -100%;
-   margin-top: -31px;
+.arrows {
+  width: 28px;
+  height: 28px;
+  color: $color_navyBlue;
+  position: absolute;
+  top: -100%;
+  margin-top: -31px;
 }
-.prev{
-   left: 40px;
-   left: -3px;
+
+.prev {
+  left: 40px;
+  left: -3px;
 }
-   
-.next{
-   right: 40px;
-   right: -3px;
+
+.next {
+  right: 40px;
+  right: -3px;
 }
-// Mobile 
-@media(max-width: 650px){
+
+// Mobile test
+@media(max-width: 570px) {
+
+  span,
+  p {
+    display: none;
+  }
+
   .splide__slide img {
-    width: 90% ;
+    margin: auto;
+    padding-top: 5%;
+  }
+}
+
+// Mobile 
+@media(max-width: 650px) {
+  .splide__slide img {
+    width: 90%;
     height: 160px;
     padding-left: 10px;
     margin-left: 0%;
 
   }
- 
-  .prev{
+
+  .prev {
     left: -3px;
   }
-   
-  .next{
+
+  .next {
     right: -3px;
-    fill:  $color_navyBlue;
+    fill: $color_navyBlue;
   }
 
-  .arrows{
+  .arrows {
     width: 25px;
     height: 25px;
     color: $color_navyBlue;
@@ -93,24 +109,24 @@ nav{
 }
 
 // Mobile 2
-@media(min-width: 651px) and (max-width: 768px){
+@media(min-width: 651px) and (max-width: 768px) {
   .splide__slide img {
-    width: 90% ;
+    width: 90%;
     height: 160px;
     padding-left: 10px;
     margin-left: 0%;
   }
 
-  .prev{
+  .prev {
     left: -3px;
   }
-   
-  .next{
+
+  .next {
     right: -3px;
-    fill:  $color_navyBlue;
+    fill: $color_navyBlue;
   }
 
-  .arrows{
+  .arrows {
     width: 25px;
     height: 25px;
     color: $color_navyBlue;
@@ -122,25 +138,25 @@ nav{
 }
 
 // Tablet
-@media(min-width: 769px) and (max-width: 950px){
+@media(min-width: 769px) and (max-width: 950px) {
 
   .splide__slide img {
-    width: 100% ;
+    width: 100%;
     height: 190px;
     padding-left: 3px;
     margin-left: 0%;
   }
 
-  .prev{
+  .prev {
     left: -3px;
   }
-   
-  .next{
+
+  .next {
     right: -3px;
-    fill:  $color_navyBlue;
+    fill: $color_navyBlue;
   }
 
-  .arrows{
+  .arrows {
     width: 25px;
     height: 25px;
     color: $color_navyBlue;
@@ -151,25 +167,26 @@ nav{
 
 
 }
+
 // Tablet 2
-@media(min-width: 951px) and (max-width: 1048px){
+@media(min-width: 951px) and (max-width: 1048px) {
 
   .splide__slide img {
-    width: 100% ;
+    width: 100%;
     height: 250px;
     padding-left: 3px;
     margin-left: 0%;
   }
 
-  .prev{
+  .prev {
     left: -3px;
   }
-   
-  .next{
+
+  .next {
     right: -3px;
   }
 
-  .arrows{
+  .arrows {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -179,17 +196,18 @@ nav{
 
 
 }
+
 // Tablet 3
-@media(min-width: 1049px) and (max-width: 1279px){
+@media(min-width: 1049px) and (max-width: 1279px) {
 
   .splide__slide img {
-    width: 100% ;
+    width: 100%;
     height: 250px;
     padding-left: 3px;
     margin-left: 0%;
   }
 
-  .arrows{
+  .arrows {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -197,15 +215,15 @@ nav{
     margin-top: -31px;
   }
 
-  .prev{
+  .prev {
     left: -3px;
   }
-   
-  .next{
+
+  .next {
     right: -3px;
   }
 
-  
+
 
 
 }
