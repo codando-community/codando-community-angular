@@ -1,19 +1,17 @@
 @import "../../../sass/abstracts/variables";
 
-#pag-pilares-background{
+#pag-pilares-background {
   height: fit-content;
   background-color: $color_darkBlue;
   padding: 15% 0;
-  
-  
 
-  >h1{
+  >h1 {
     width: 100%;
     text-align: center;
   }
 }
 
-h1{
+h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -22,13 +20,13 @@ h1{
 }
 
 .align-left-to-right {
-  grid-template-areas:  "title image"
-                        "description image";
+  grid-template-areas: "title image"
+    "description image";
 }
 
 .align-right-to-left {
-  grid-template-areas:  "image title"
-                        "image description";
+  grid-template-areas: "image title"
+    "image description";
 }
 
 
@@ -39,7 +37,7 @@ h1{
   grid-template-columns: 50% fit-content;
   grid-template-rows: auto auto;
   column-gap: 10%;
-  padding: 0 10%;
+  // padding: 0 10%;
   padding-bottom: 5%;
   z-index: 20;
 
@@ -64,26 +62,51 @@ h1{
   }
 }
 
-#pag-pilares{
+#pag-pilares {
   align-content: center;
+  justify-items: center;
   display: grid;
   width: 100%;
   padding: 10% 0% 5%;
   row-gap: 2%;
 }
 
+// Mobile TEST
+
+@media(max-width: 500px) {
+  #pag-pilares {
+    justify-items: center;
+    overflow: hidden;
+  }
+
+  .grid-principle {
+    padding-bottom: 10%;
+    h1{
+      max-width: 100%;
+      margin-bottom: 20px;
+      font-size: 150%;
+    }
+    h2 {
+      max-width: 300px;
+      font-size: 100%;
+
+    }
+  }
+}
+
 // Mobile
-@media(max-width: 768px){
-  #pag-pilares{
-    #blob-desktop-top{
+@media(max-width: 768px) {
+  #pag-pilares {
+    #blob-desktop-top {
       height: 722.76px;
       max-width: 100%;
       position: absolute; // TODO Posicionamento correto
-      top: 290%; 
+      top: 290%;
       left: 0;
       z-index: 2;
     }
-    #blob-desktop-bottom{
+
+    #blob-desktop-bottom {
       height: 672.76px;
       max-width: 100%;
       position: absolute; // TODO Posicionamento correto
@@ -94,25 +117,27 @@ h1{
     }
   }
 
-  #titulo-pilares{
+  #titulo-pilares {
     padding-bottom: 100px;
   }
 
-  .grid-principle{
-    padding-left: 10%;
-    
-    h1{
+  .grid-principle {
+    justify-items: center;
+    // padding-left: 10%;
+
+    h1 {
       text-align: center;
     }
-    h2{
+
+    h2 {
       width: 500px;
       height: fit-content;
       text-align: center;
     }
 
-    img{
+    img {
       width: 300px;
-      padding-left: 20%;
+      // padding-left: 20%;
       margin-bottom: 5%;
       font-family: 'Montserrat', sans-serif;
       font-weight: 300;
@@ -121,26 +146,27 @@ h1{
     }
   }
 
-// TODO Align Middle para Mobile
+  // TODO Align Middle para Mobile
   .align-middle {
-    grid-template-areas: "image" 
-                         "title" 
-                         "description";
-}  
+    grid-template-areas: "image"
+      "title"
+      "description";
+  }
 }
 
 // Tablet
-@media(min-width: 769px) and (max-width: 1279px){
-  #pag-pilares{
-    #blob-desktop-top{
+@media(min-width: 769px) and (max-width: 1279px) {
+  #pag-pilares {
+    #blob-desktop-top {
       height: 722.76px;
       max-width: 100%;
       position: absolute; // TODO Posicionamento correto
-      top: 250%; 
+      top: 250%;
       left: 0;
       z-index: 2;
     }
-    #blob-desktop-bottom{
+
+    #blob-desktop-bottom {
       height: 672.76px;
       max-width: 100%;
       position: absolute; // TODO Posicionamento correto
@@ -151,16 +177,18 @@ h1{
     }
   }
 
-  #titulo-pilares{
+  #titulo-pilares {
     padding-bottom: 100px;
   }
-  .grid-principle{
+
+  .grid-principle {
     padding-left: 10%;
-    h2{
+
+    h2 {
       width: 430px;
     }
 
-    img{
+    img {
       width: 250px;
       max-width: 250px;
       font-family: 'Montserrat', sans-serif;
@@ -172,17 +200,18 @@ h1{
 }
 
 // Desktop
-@media(min-width: 1280px){
-  #pag-pilares{
-    #blob-desktop-top{
+@media(min-width: 1280px) {
+  #pag-pilares {
+    #blob-desktop-top {
       height: 872.76px;
       max-width: 100%;
       position: absolute; // TODO Posicionamento correto
-      top: 220%; 
+      top: 220%;
       left: 0;
       z-index: 2;
     }
-    #blob-desktop-bottom{
+
+    #blob-desktop-bottom {
       height: 872.76px;
       max-width: 200%;
       position: absolute; // TODO Posicionamento correto
